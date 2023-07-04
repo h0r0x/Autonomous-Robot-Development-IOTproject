@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['divieto', 'ostacolo', 'pedone', 'semaforo']
+
+roboflow:
+  workspace: uni-vham6
+  project: macchinina
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/uni-vham6/macchinina/dataset/1
