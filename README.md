@@ -49,7 +49,7 @@ Inoltre, per semplificare la connessione delle varie componenti e ridurre la com
 
 L'utilizzo del Raspberry Pi 4, delle batterie, degli standoffs e del robot HAT costituiscono una solida  base  hardware  per  il  robottino  autonomo,  garantendo  una  potente  capacità  di elaborazione, un'adeguata alimentazione e una connessione semplificata delle componenti. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.003.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.003.png)
 
 ## Sensori 
 
@@ -57,19 +57,19 @@ I sensori utilizzati nel robottino autonomo svolgono un ruolo fondamentale nell'
 
 1) La webcam acquisisce le immagini dell'ambiente circostante e consente al robottino di rilevare le linee della carreggiata, identificare i segnali stradali e ottenere informazioni visive per  la  guida  autonoma.  Le  immagini  acquisite  sono  elaborate  attraverso  algoritmi  di computer vision per riconoscere e analizzare gli elementi chiave della scena stradale. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.004.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.004.png)
 
 2) Il sensore "Gray Scale Module" è utilizzato per mantenere il robottino allineato rispetto alla linea della carreggiata. Questo sensore rileva le variazioni di colore sulla superficie stradale e fornisce segnali al sistema per correggere la traiettoria. Utilizzando una matrice di fotodiodi, il sensore è in grado di distinguere tra diverse tonalità di grigio sulla strada e determinare la posizione del robottino rispetto alla linea di guida desiderata. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.005.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.005.png)
 
 3) Il sensore "Ultrasonic Module" viene impiegato per rilevare la distanza dagli ostacoli lungo la traiettoria di guida. Questo modulo utilizza onde sonore ad alta frequenza per misurare il tempo impiegato dalle stesse per tornare dopo essere state riflesse dagli ostacoli circostanti. In  base  al tempo  di ritorno,  il  sensore  calcola  la  distanza tra  il  robottino  e  gli  oggetti circostanti. Queste informazioni consentono al sistema di attivare la funzionalità di “collision detection” e di arresto in caso di ostacoli imminenti lungo il percorso. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.006.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.006.png)
 
 Grazie alle informazioni acquisite da questi sensori ed elaborate dal Raspberry Pi, il robottino è in grado di prendere decisioni di guida autonoma, mantenere l'allineamento sulla linea della carreggiata e reagire in modo adeguato agli ostacoli lungo il percorso. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.007.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.007.png)
 
 ## Ambiente di Test 
 
@@ -79,15 +79,15 @@ Di seguito viene illustrata una rappresentazione schematica delle 3 configurazio
 
 - Scenario  rettilineo:  esso  consiste  in  un  tratto  rettilineo  senza  curve.  È  stato  realizzato applicando del nastro adesivo nero su un terreno bianco, creando un contrasto elevato tra le due componenti. Ciò consente al robottino di rilevare la linea nera e mantenere l'allineamento durante la guida autonoma. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.008.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.008.png)
 
 Scenario doppia curva leggera (chicane): Questo scenario simula una doppia curva leggera che richiede al robottino di adattarsi al cambiamento di direzione. Anche in questo caso, è stato utilizzato del nastro adesivo nero su un terreno bianco per creare la linea di guida e garantire una buona visibilità per i sensori del robottino. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.009.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.009.png)
 
 - Scenario curva: consiste in una curva più pronunciata rispetto alla chicane. È stato realizzato nello stesso modo degli altri scenari, con del nastro adesivo nero su un terreno bianco. La curva rappresenta una sfida aggiuntiva per il robottino autonomo, richiedendo una maggiore capacità di sterzata e adattamento alla traiettoria curva. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.010.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.010.png)
 
 L'utilizzo del nastro adesivo nero su un terreno bianco offre un ambiente di test solido e  riconoscibile per i sensori del robottino. Il contrasto elevato, dato dai due colori, consente ai sensori di rilevare con precisione la linea di guida e prendere decisioni di controllo in base alle informazioni fornite. 
 
@@ -97,9 +97,9 @@ La scelta di creare scenari distinti ci ha permesso di valutare le prestazioni d
 
 Come detto nel capitolo precedente si vuole affrontare anche la sfida del riconoscimento della segnaletica stradale e dei pedoni utilizzando le immagini acquisite dalla webcam. Per rendere il tutto più reale possibile è stato scelto di utilizzare degli omini Lego per rappresentare i pedoni e realizzare, mediante una stampante 3D, la segnaletica in “miniatura”.  
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.011.jpeg)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.011.jpeg)
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.012.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.012.png)
 
 # Implementazione software 
 
@@ -124,7 +124,7 @@ Dopo aver installato tutto il necessario è stata eseguita una calibrazione per 
 
 Per fare ciò è stato eseguito lo script “calibration.py” presente nella repository ufficiale. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.013.jpeg)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.013.jpeg)
 
 La calibrazione è un passaggio fondamentale in quanto durante l’assemblaggio le varie parti possono  disallinearsi  (come  è  successo  a  noi)  e  risulta  quindi  necessario  sistemare  “a posteriori” questo inconveniente, tramite una calibrazione degli angoli iniziali che le varie componenti devono avere.  
 
@@ -187,7 +187,7 @@ cm = round(during \* 340 / 2 \* 100 , 2)
 
 During è l’intervallo di tempo tra quando di ha iniziato ad inviare il segnale (pulse\_start) e quando si è ricevuto (pulse\_end),  340 è la velocità dell’onda in m/s. Moltiplichiamo per 100 per avere il risultato in centimetri e dividiamo per due poiché consideriamo che l’onda ha percorso lo stesso spazio due volte (sia all’andata che al ritorno). 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.014.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.014.png)
 
 Il tutto viene implementato da dalla funzione “ultrasonic.read()”. 
 
@@ -221,7 +221,7 @@ Le seguenti linee di codice rappresentano la nostra implementazione per catturar
 
 Con  “cap  =  cv2.VideoCapture(0)”   viene  creato  un  oggetto  VideoCapture  che rappresenta la connessione alla webcam del computer. Il numero 0 come argomento indica che  la  prima  webcam  disponibile  sarà  utilizzata.  Con  i  seguenti  comandi  “cap.set(cv2.CAP\_PROP\_FRAME\_WIDTH,  480)”  e “cap.set(cv2.CAP\_PROP\_FRAME\_HEIGHT, 360)” viene imposta la larghezza del frame video acquisito a 480 pixel e 360 pixel di altezza.  La funzione cap.read() legge il frame successivo dalla webcam e restituisce due valori: ret, un valore booleano che indica se l'acquisizione è avvenuta correttamente, e frame, che rappresenta il frame acquisito come un'immagine. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.015.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.015.png)
 
 Ottenuta l’immagine è necessario trovare un modo per trovare le linee della carreggiata e identificare la loro posizione. 
 
@@ -231,7 +231,7 @@ La funzione cv2.Canny() applica l'algoritmo di Canny per individuare i bordi nel
 
 Il risultato ottenuto è simile al seguente: 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.016.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.016.png)
 
 Successivamente viene selezionata solo una regione d’interesse applicando una maschera sull'immagine dei bordi: di fatto l'obiettivo attuale rimane individuare le linee della carreggiata e sapendo che esse saranno solo sulla parte inferiore dell’immagine, la parte superiore contiene informazioni non utili e che potenzialmente potrebbero confondere i prossimi passi. 
 
@@ -249,7 +249,7 @@ Successivamente viene definito un “poygon”: esso specifica l'area di interes
 
 Infine con  “cv2.bitwise\_and(edges, mask)” viene applicata un'operazione di "bitwise and" tra l'immagine edges e la maschera mask. Ciò significa che i pixel corrispondenti tra edges e mask vengono mantenuti, mentre i pixel non corrispondenti vengono impostati a zero. Il risultato è l'immagine cropped\_edges, che contiene solo i bordi rilevati nella regione di interesse definita dal poligono. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.017.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.017.png)
 
 Poi usando la trasformata di Hough probabilistica vengono rilevati tutti i segmenti di linee nell'immagine “cropped\_edges”; ciò viene fatto usando la funzione ”cv2.HoughLinesP()“ a ci vengono passati tra gli altri i seguenti parametri: 
 
@@ -277,7 +277,7 @@ Ciò che abbiamo ottenuto a questo punto è un array così formato:
 
 Ciò che vede la fotocamera è riportato di seguito: 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.018.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.018.png)
 
 Ora il problema è identificare come dovrà muoversi il robottino: idealmente vorremmo trovare la linea di mezzo tra le due linee laterali in modo tale che riesca a proseguire al centro della carreggiata. Non sempre però l’immagine acquisita è composta da due segmenti: può capitare infatti, che a causa di una curva il robottino “veda” solo la “linea più esterna”. Dobbiamo quindi capire ciò che viene rilevato, se due linee o solamente una e successivamente trovare la linea mediana che rappresenta la direzione che le ruote del robottino dovranno seguire. 
 
@@ -336,7 +336,7 @@ Questo sfrutta la funzione load della libreria di torch e prende come modello di
 
 Il nostro scopo era quello di realizzare un'infrastruttura capace in tempo reale di riconoscere la segnaletica e l’ambiente esterno ed eventualmente prendere decisioni sulla base degli elementi che venivano rilevati. Per questo motivo la nostra idea iniziale è stata quella di elaborare  le  immagini  attraverso  una  rete  neurale  che  sfrutta  i  pesi  creati  nel  punto precedente. Purtroppo dopo svariati test si è notato che il tempo di elaborazione per analizzare una singola immagine da parte del raspberry è eccessivamente elevato: nell’ordine dei 10 secondi. Abbiamo cercato di migliorare la situazione creando e alleggerendo il più possibile la struttura della rete neurale usando versioni di Yolo v5 come Yolo v5s e Yolo v5n ma purtroppo non abbiamo ottenuto i risultati sperati.  
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.019.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.019.png)
 
 Successivamente abbiamo testato anche un secondo approccio: usare il raspberry come semplice acquisitore dell’input video e usare un pc più potente per elaborare le immagini. Questo approccio va a ridurre considerevolmente il tempo per rilevare gli oggetti presenti in un singolo frame: il “pc remoto” utilizzato monta un processore i7-12700K, 32 GB di RAM e una scheda video RTX 3070 Ti. Con questa configurazione i frame vengono analizzati in tempo reale risolvendo il problema riscontrato nella situazione precedente. Per fare ciò è stata creata una struttura client-server tra il robottino e il “pc remoto”: il raspberry cattura i frame mediante Opencv, questi vengono inviati ad una socket verso il pc remoto, il quale li scarica e li analizza utilizzando la rete addestrata allo scopo. Elaborato l’oggetto rilevato viene inviata una richiesta GET, contenente un campo in cui inseriamo una stringa identificativa dell’oggetto rilevato, al server posto sul raspberry. A tal fine, abbiamo utilizzato una libreria chiamata “Flask”  che  permette  di  creare  un  server  web  e  ricevere  richieste  a  un  dato  indirizzo esponendo una API. Il robottino, quindi, capta l’informazione ottenuta e potrà decidere come usarla al meglio. Purtroppo, anche questa struttura non è sufficiente a soddisfare i nostri obiettivi: tra la cattura del frame e la ricezione dell’eventuale oggetto rilevato si è stimato che passino circa 6 secondi. Questo tempo è troppo elevato per una struttura che dovrebbe funzionare in real-time. 
 
@@ -346,7 +346,7 @@ Infine, è stato testato un terzo approccio: al posto di Yolo si è utilizzato u
 
 la segnaletica non viene rilevata. 
 
-![](Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.020.png)
+![](images/Aspose.Words.7cf9b80e-ba93-452f-8a96-908503a6c06f.020.png)
 
 # Risultati e conclusioni 
 
